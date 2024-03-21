@@ -10,7 +10,6 @@ var isPowerOfTwo = function(n) {
 
     let i=0
     
-    
     do{
          
         if(Math.pow(2,i) == n){
@@ -25,4 +24,4 @@ var isPowerOfTwo = function(n) {
         
     }while(i<n)
     
-    };
+};
