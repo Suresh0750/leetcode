@@ -17,6 +17,8 @@ var addDigits = function(num) {
 
 
     //first method
+
+    
     // while(num>9){
     //     num=num%10+Math.floor(num/10)
     // }
