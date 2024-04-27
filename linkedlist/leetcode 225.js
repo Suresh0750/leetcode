@@ -24,6 +24,8 @@ MyStack.prototype.pop = function() {
  * @return {number}
  */
 MyStack.prototype.top = function() {
+
+     //* we use this.item.at(-1) it is also refer last element
     if(this.item.length) return this.item[this.item.length-1]
 
     return undefined
