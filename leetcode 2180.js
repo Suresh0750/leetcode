@@ -5,8 +5,6 @@
  * @return {number}
  */
 var countEven = function(num) {
-
-
     let c = 0
     let i = 1
     let sum = 0
