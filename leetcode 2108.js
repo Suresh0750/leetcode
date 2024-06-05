@@ -26,3 +26,4 @@ var firstPalindrome = function(words) {
 
     return result
 };
+
