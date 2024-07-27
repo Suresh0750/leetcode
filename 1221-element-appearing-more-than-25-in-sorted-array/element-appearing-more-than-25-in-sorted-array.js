@@ -20,6 +20,5 @@ var findSpecialInteger = function(arr) {
             c = 0
         }
     }
-    console.log(obj)
     return obj.val
 };
