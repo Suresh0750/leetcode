@@ -12,41 +12,6 @@
  */
 var addTwoNumbers = function(l1, l2) {
     
-    // function reverseVal(node){
-
-    //     let val = []
-
-    //     let i = 0
-
-    //     while(node){
-    //         val.push(node.val)
-    //         node = node.next
-    //     }
-    //     console.log(val.reverse('').join(''))
-    //     return val.reverse('').join('')
-    //     // i = val.length-1
-    //     // let result = ''
-
-    //     // while(i>=0){
-    //     //     result+=val[i]
-    //     //     i--
-    //     // }
-
-    //     // return result
-    // }
-    // let val1 = +(reverseVal(l1)) ; 
-    // let val2 = +(reverseVal(l2))
-    // let newNode = (val1+val2)+''
-
-    // newNode = newNode.split('').reverse('')
-    // console.log(newNode)
-    // let node = new ListNode()
-    // let returnNode = node
-    // newNode.map((val)=>{
-    //     node.next =  new ListNode(val)
-    //     node = node.next
-    // })
-    // return returnNode.next
     let node = new ListNode(0)
     let curr = node
     let bal = 0
