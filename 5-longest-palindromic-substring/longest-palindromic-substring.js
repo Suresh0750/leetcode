@@ -42,6 +42,7 @@ for(let key in obj){
              if(sub) {
                 let val = s.substr(arr[i],((arr[k]-arr[i])+1))
                 res = val
+                break;
             }
             }
         }
