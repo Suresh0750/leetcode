@@ -4,7 +4,6 @@
  */
 var letterCombinations = function(digits) {
 
-
 let container = ['','abc','def','ghi','jkl','mno','pqrs','tuv','wxyz']
 if(digits.length==1) return container[digits[0]-1].split('')
 
@@ -39,8 +38,7 @@ i = 0
 function call(m,j,k,z){
     
     if(digits.length==1){
-        // console.log(m,j,k,z,i,(((i/1)%(z+1))-1))
-        
+       
       return insideContain[0][(((i/1)%(z+1)))]
     }else if(digits.length==2) {
         console.log(k,z,i,((Math.floor(i/3)%(k+1))),((((i/1)%(z+1)))))
@@ -74,6 +72,5 @@ while(total){
 }
 
 return res
-// console.log(res)
 
 };
