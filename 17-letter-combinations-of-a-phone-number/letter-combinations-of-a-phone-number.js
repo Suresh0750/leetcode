@@ -38,10 +38,8 @@ i = 0
 function call(m,j,k,z){
     
 if(digits.length==2) {
-        // console.log(k,z,i,((Math.floor(i/3)%(k+1))),((((i/1)%(z+1)))))
         return insideContain[0][((Math.floor(i/z)%(k)))] +insideContain[1][((Math.floor(i/1)%(z)))]
     }else if(digits.length==3){
-// console.log(j,k,z,((Math.floor(i/(j*k))%(j))),((Math.floor(i/k)%(k))),((Math.floor(i/1)%(z))))
         return insideContain[0][((Math.floor(i/(z*k))%(j)))]+insideContain[1][((Math.floor(i/k)%(k)))] +insideContain[2][((Math.floor(i/1)%(z)))]
     }else if(digits.length==4){
         return insideContain[0][((Math.floor(i/(z*k*j))%(m)))]+insideContain[1][((Math.floor(i/(z*k))%(j)))]+insideContain[2][((Math.floor(i/z)%(k)))] +insideContain[3][((Math.floor(i/1)%(z)))]
