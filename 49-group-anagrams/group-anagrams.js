@@ -8,15 +8,10 @@ obj ={}
 
 let i = 0
 
-// while(i<strs.length){
-//     console.log( strs[i].split('').sort().join(''))
-//     i++
-// }
 
 while(i<strs.length){
     let sortVal = strs[i].split('').sort().join('')
     if(obj[sortVal]){
-        console.log(obj[sortVal])
      obj[sortVal].push(strs[i])
     }else{
         obj[sortVal] = [strs[i]]
@@ -24,6 +19,15 @@ while(i<strs.length){
     i++
 }
 return Object.values(obj)
+
+
+
+
+
+
+
+
+
 // console.log(Object.values(obj))
 
 // console.log(obj)
