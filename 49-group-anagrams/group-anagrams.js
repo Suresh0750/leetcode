@@ -3,32 +3,56 @@
  * @return {string[][]}
  */
 var groupAnagrams = function(strs) {
-    
-let newStrs = strs.map((val)=>{
-    return val.split('').sort().join('')
-})
 
-let res = []
+obj ={}
 
-let i=newStrs.length-1
+let i = 0
 
-while(i>=0){
-    let inarr = []
-    inarr.push(strs[i])
-    j = i-1
-    if(strs[i]!=null){
-    while(j>=0){
-        if(newStrs[i]==newStrs[j]){
-            inarr.push(strs[j])
-            strs[j]=null
-        }
-        j--
+// while(i<strs.length){
+//     console.log( strs[i].split('').sort().join(''))
+//     i++
+// }
+
+while(i<strs.length){
+    let sortVal = strs[i].split('').sort().join('')
+    if(obj[sortVal]){
+        console.log(obj[sortVal])
+     obj[sortVal].push(strs[i])
+    }else{
+        obj[sortVal] = [strs[i]]
     }
-    res.push(inarr)
-    }
-    i--
+    i++
 }
+return Object.values(obj)
+// console.log(Object.values(obj))
 
- return res
+// console.log(obj)
+    
+// let newStrs = strs.map((val)=>{
+//     return val.split('').sort().join('')
+// })
+
+// let res = []
+
+// let i=newStrs.length-1
+
+// while(i>=0){
+//     let inarr = []
+//     inarr.push(strs[i])
+//     j = i-1
+//     if(strs[i]!=null){
+//     while(j>=0){
+//         if(newStrs[i]==newStrs[j]){
+//             inarr.push(strs[j])
+//             strs[j]=null
+//         }
+//         j--
+//     }
+//     res.push(inarr)
+//     }
+//     i--
+// }
+
+//  return res
 
 };
