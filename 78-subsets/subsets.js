@@ -4,8 +4,6 @@
  */
 var subsets = function(nums) {
 
-let res = [[]]
-
 
 function backtracking(arr,i){
    if(i>=nums.length) return arr
