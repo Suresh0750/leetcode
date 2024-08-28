@@ -8,9 +8,7 @@ let res = [[]]
 
 
 function backtracking(arr,i){
-    if(i>=nums.length) return arr
-    
-   
+   if(i>=nums.length) return arr
    let newArr = []
    
    for(let j=0;j<arr.length;j++){
@@ -22,7 +20,6 @@ function backtracking(arr,i){
     return backtracking(newArr,i)
 }
 
-console.log(backtracking([[]],0))
  return backtracking([[]],0)
 
 };
