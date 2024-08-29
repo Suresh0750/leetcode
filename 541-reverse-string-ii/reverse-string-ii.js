@@ -8,7 +8,6 @@ var reverseStr = function(s, k) {
     let res = ''
     while(i<s.length){
         res +=(s.substr(i,k)).split('').reverse('').join('')+s.substr(i+k,k)
-        console.log(res)
         i = i+2*k
     }
 
