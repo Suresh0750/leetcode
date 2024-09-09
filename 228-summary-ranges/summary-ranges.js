@@ -11,7 +11,7 @@ var summaryRanges = function(nums) {
         if(nums[i]+1==nums[i+1]){
         i++
         continue
-        }else if(nums[i]+1!=nums[i+1]){
+        }else{
             if(store==nums[i]) res.push(`${nums[i]}`)
             else res.push(`${store}->${nums[i]}`)
             store = nums[i+1]
