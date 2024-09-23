@@ -14,6 +14,5 @@ var createTargetArray = function(nums, index) {
         }
     })
 
-    console.log(newArr)
     return newArr
 };
