@@ -16,14 +16,6 @@ var numberOfPairs = function(nums) {
             obj[key] = 1
         }
     }
-    function add(val){
-        if(val==1){
-            res[1]++
-        }else{
-            res
-        }
-    }
-    console.log(obj)
     Object.values(obj).forEach((val)=>{
         if(val%2==0){
             res[0]+=(val/2)
@@ -34,6 +26,6 @@ var numberOfPairs = function(nums) {
             res[0] +=(val-1)/2
         }
     })
-    console.log(res)
+
     return res
 };
