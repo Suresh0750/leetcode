@@ -14,13 +14,10 @@ var compress = function(chars) {
             c = 1
         }
     }
-
-
   i =0 
   let res = []
   while(i<arr.length){
       if(isNaN(arr[i])){
-          console.log(arr[i])
           res.push(arr[i])
       }else if(String(arr[i]).length>1){
           res.push(...(String(arr[i]).split('')))
