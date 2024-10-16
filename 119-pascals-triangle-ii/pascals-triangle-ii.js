@@ -12,7 +12,6 @@ var getRow = function(rowIndex) {
         arr[i]= []
          while(j<=i){
             if(j==0 || j==i){
-                console.log(arr)
                 arr[i][j] = 1
             }else{
                 arr[i][j] = arr[i-1][j-1]+arr[i-1][j]
@@ -21,6 +20,5 @@ var getRow = function(rowIndex) {
         }
        i++
     }
-    console.log(arr)
     return arr[arr.length-1]
 };
