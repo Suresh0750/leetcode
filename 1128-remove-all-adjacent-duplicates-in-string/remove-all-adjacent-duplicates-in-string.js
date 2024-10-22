@@ -11,7 +11,7 @@ var removeDuplicates = function(s) {
             s.splice(i,2)
             i-=2
         }
-        if(!s.length) break
+        if(!s.length) break;
         i++
     }
     return s.join('')
