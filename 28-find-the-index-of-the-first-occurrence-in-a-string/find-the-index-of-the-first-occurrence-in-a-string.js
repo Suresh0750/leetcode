@@ -4,41 +4,20 @@
  * @return {number}
  */
 var strStr = function(haystack, needle) {
- 
+    
+let output = -1
 
-if(haystack.indexOf(needle[0])==haystack.lastIndexOf(needle[0])){
-    let j = haystack.indexOf(needle[0])
-      for(let i=0;i<needle.length;i++){
-            if(needle[i]!==haystack[j++]){
-                return -1
-            }
-        }
-        return haystack.indexOf(needle[0])
-}else{
-    let arr = []
-    for(let i=0;i<haystack.length;i++){
-        if(haystack[i]==needle[0]){
-            arr.push(i)
-        }
-    }
+let lastIndex = needle.length
 
-    for(let i=0;i<arr.length;i++){
-        let k = arr[i]
-        for(let j=0;j<needle.length;j++){
-                
-            if(needle[j]!==haystack[k++]){
-                k--
-               break;
-            }
-        }
-     
-        if((arr[i]+needle.length)==k){
-        
-            return arr[i]
-        }
+let i = 0
+while(i<haystack.length){
+    // console.log(haystack.substr(i,lastIndex))
+    if(haystack[i]==needle[0] && needle==haystack.substr(i,lastIndex)){
+        output = i
        
+        break;
     }
-    return -1
+    i++
 }
-   
+return output
 };
