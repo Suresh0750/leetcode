@@ -11,7 +11,7 @@ let lastIndex = needle.length
 
 let i = 0
 while(i<haystack.length){
-    // console.log(haystack.substr(i,lastIndex))
+    
     if(haystack[i]==needle[0] && needle==haystack.substr(i,lastIndex)){
         output = i
        
