@@ -27,7 +27,7 @@ var solution = function(isBadVersion) {
                 if(!prev) return mid
                 if(prev) i--
                 if(isBad && prev) n = mid-1
-            }else if(!isBad) i = mid+1
+            }else i = mid+1
            
         }
     };
