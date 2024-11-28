@@ -12,6 +12,5 @@ var finalValueAfterOperations = function(operations) {
             x-=1
         }
     }
-    console.log(x)
     return x
 };
