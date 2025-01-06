@@ -8,7 +8,7 @@ var singleNonDuplicate = function(nums) {
         if(nums[i]!==nums[i+1]){
             return nums[i]
         }
-    i+=2
+        i+=2
     }
 
 };
