@@ -19,6 +19,5 @@ var numUniqueEmails = function(emails) {
             obj[wholeWord] = true
         }
     }
-    console.log(obj)
     return Object.keys(obj).length
 };
