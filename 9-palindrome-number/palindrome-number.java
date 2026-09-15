@@ -1,14 +1,14 @@
 class Solution {
-    int rev = 0;
+    
     public boolean isPalindrome(int x) {
         if(x<0) return false;
-        helper(x);
+        int rev = helper(x,0);
         return x==rev;
     }
-    public void helper(int x){
-        if(x==0) return;
+    public int helper(int x,int rev){
+        if(x==0) return rev;
         int rem = x%10;
         rev = rev*10+rem;
-        helper(x/10);
+       return helper(x/10,rev);
     }
 }
