@@ -4,7 +4,6 @@ class Solution {
         HashSet<Integer> stack = new HashSet<>();
         if(n<0) return false;
         int res = helper(n,0,stack);
-        System.out.println(res);
         return res==1;
     }
     int helper(int n,int sum,HashSet<Integer> stack){
