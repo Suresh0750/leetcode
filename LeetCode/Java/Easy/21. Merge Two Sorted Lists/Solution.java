@@ -13,12 +13,13 @@ class Solution {
         
         if(list1==null) return list2;
         if(list2==null) return list1;
-        ListNode node = list1;
-        ListNode head = node;
+        ListNode head = new ListNode(list1.val);
+        ListNode curr=head;
         while(list1!=null && list2!=null){
-            ListNode smallNode = list1.val <list2.val ? list1 ? list2;
-            node.next = smallNode;
-            node =smallNode;
+            int val = list1.val <list2.val ? list1.val : list2.val;
+            ListNode node = new ListNode(val);
+            curr.next = node;
+            curr = curr.next;
             if(list1.val <list2.val){
                 list1 = list1.next;
             }else{
@@ -26,10 +27,10 @@ class Solution {
             }
         }
         if(list1!=null){
-            node.next = list1;
+            curr.next = list1;
         }
         if(list2!=null){
-            node.next = list2;
+            curr.next = list2;
         }
         return head.next;
     }
