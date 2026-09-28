@@ -13,10 +13,10 @@ class Solution {
         if(list1==null) return list2;
         if(list2==null) return list1;
         ListNode node =  mergeTwoLists(list1.next,list2.next);
-        list1.next = list2;
-        ListNode currentLastNode = list1.next;
+        list2.next = list1;
+        ListNode currentLastNode = list2.next;
         currentLastNode.next = node;
-        return list1;
+        return list2;
     }
     
 }
