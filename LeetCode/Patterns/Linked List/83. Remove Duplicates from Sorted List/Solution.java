@@ -17,6 +17,7 @@ class Solution {
             }else{
                 node = node.next;
             }
+            if(node==null) break;
         }
         return head;
     }
