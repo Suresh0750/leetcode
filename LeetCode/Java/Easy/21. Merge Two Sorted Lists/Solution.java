@@ -18,7 +18,7 @@ class Solution {
         while(list1!=null && list2!=null){
             ListNode smallNode = list1.val <list2.val ? list1 ? list2;
             node.next = smallNode;
-            node = node.next;
+            node =smallNode;
             if(list1.val <list2.val){
                 list1 = list1.next;
             }else{
